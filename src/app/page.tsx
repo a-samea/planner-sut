@@ -1,11 +1,8 @@
-'use client';
-
-import React from "react";
-import { useState } from "react";
+'use server';
 
 
-export default function Home() {
-  const [count, setCount] = useState(0);
+
+export default async function Home() {
 
   return (
     <main className="min-h-screen p-8">
@@ -18,13 +15,6 @@ export default function Home() {
           <p className="mb-4">
             This is a sample Next.js page with a counter.
           </p>
-          
-          <button
-            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-            onClick={() => setCount(count + 1)}
-          >
-            Count: {count}
-          </button>
         </div>
       </div>
     </main>

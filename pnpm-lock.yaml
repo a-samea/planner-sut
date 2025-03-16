@@ -11,15 +11,15 @@ importers:
       '@t3-oss/env-nextjs':
         specifier: ^0.12.0
         version: 0.12.0(typescript@5.8.2)(zod@3.24.2)
-      appwrite:
-        specifier: ^17.0.0
-        version: 17.0.0
       next:
         specifier: 15.2.1
         version: 15.2.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       node-appwrite:
         specifier: ^15.0.0
         version: 15.0.0
+      postcss:
+        specifier: ^8.5.3
+        version: 8.5.3
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -34,7 +34,7 @@ importers:
         specifier: ^3
         version: 3.3.0
       '@tailwindcss/postcss':
-        specifier: ^4
+        specifier: ^4.0.12
         version: 4.0.12
       '@types/node':
         specifier: ^20
@@ -52,7 +52,7 @@ importers:
         specifier: 15.2.1
         version: 15.2.1(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2)
       tailwindcss:
-        specifier: ^4
+        specifier: ^4.0.12
         version: 4.0.12
       typescript:
         specifier: ^5
@@ -495,9 +495,6 @@ packages:
   ansi-styles@4.3.0:
     resolution: {integrity: sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==}
     engines: {node: '>=8'}
-
-  appwrite@17.0.0:
-    resolution: {integrity: sha512-R5+jMh6dVsKC5BdcO9G3wQPxqlU048zxj/Hahq2SU86XIxb0jWThQqS7MtyLUg7tz27SrwO2JvpwUrT9SOStDA==}
 
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
@@ -2017,8 +2014,6 @@ snapshots:
   ansi-styles@4.3.0:
     dependencies:
       color-convert: 2.0.1
-
-  appwrite@17.0.0: {}
 
   argparse@2.0.1: {}
 
