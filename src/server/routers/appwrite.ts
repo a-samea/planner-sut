@@ -35,3 +35,28 @@ export async function createAdminAccount() {
     },
   };
 }
+
+// src/server/routers/appwrite.ts
+import { publicProcedure, router } from '../trpc/router';
+import { z } from 'zod';
+
+export const appwriteRouter = router({
+  // Example query: Fetch Appwrite project information
+  getProjectInfo: publicProcedure.query(async ({ ctx }) => {
+    // Insert your secure Appwrite client call here.
+    return { projectName: 'My Appwrite Project', status: 'active' };
+  }),
+
+  // Example mutation: Create an item via Appwrite
+  createItem: publicProcedure
+    .input(
+      z.object({
+        name: z.string().min(1),
+        description: z.string().optional(),
+      })
+    )
+    .mutation(async ({ input, ctx }) => {
+      // Call Appwrite's API to create an item. Replace with actual logic.
+      return { success: true, item: input };
+    }),
+});

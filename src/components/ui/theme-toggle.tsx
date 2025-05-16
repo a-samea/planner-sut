@@ -13,21 +13,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 
 export function ModeToggle() {
-  const { setTheme, theme } = useTheme()
-  const [mounted, setMounted] = React.useState(false)
-
-  // When mounted on client, now we can show the UI
-  React.useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  if (!mounted) {
-    return (
-      <Button variant="outline" size="icon">
-        <span className="h-[1.2rem] w-[1.2rem]"></span>
-      </Button>
-    )
-  }
+  const { setTheme } = useTheme()
 
   return (
     <DropdownMenu>
